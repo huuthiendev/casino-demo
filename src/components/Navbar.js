@@ -12,14 +12,14 @@ const NavbarWrapper = styled.nav`
   padding: 16px 0;
   position: relative;
 
-  @media (max-width: 880px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     padding: 32px;
   }
 `;
 
 const NavLinkWrapper = styled.div`
-  @media (max-width: 880px) {
+  @media (max-width: 900px) {
     display: ${(props) => (props.active ? "block" : "none")};
     text-align: center;
     padding: 32px 0;
@@ -37,7 +37,7 @@ const StyledNavLink = styled(NavLink)`
     background: #8DC63F;
   }
 
-  @media (max-width: 880px) {
+  @media (max-width: 900px) {
     display: block;
     margin: 32px auto;
   }
@@ -51,7 +51,8 @@ const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
-  @media (max-width: 880px){
+
+  @media (max-width: 900px){
     display: block;
   }
 `;
@@ -87,6 +88,7 @@ const Navbar = () => {
             activeClassName="active"
             key={link.page}
             to={link.href}
+            onClick={() => setActive(false)}
           >
             {link.page}
           </StyledNavLink>

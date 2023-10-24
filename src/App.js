@@ -11,7 +11,6 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log('GAME_API: ', process.env.REACT_APP_GAME_API)
     dispatch(fetchGames());
 
     setInterval(() => {

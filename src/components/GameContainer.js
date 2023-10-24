@@ -9,6 +9,7 @@ const ImageContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 `;
 
 const GameButton = styled.button`
@@ -41,6 +42,7 @@ const ImageBox = styled.div`
   border-radius: 16px;
   position: relative;
   overflow: hidden;
+  width: 260px;
 
   &:hover ${GameButton} {
     display: block;
